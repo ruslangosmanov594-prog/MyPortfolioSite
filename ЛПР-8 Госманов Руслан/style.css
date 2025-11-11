@@ -1,0 +1,99 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* 📺 Стили для десктопа */
+@media (min-width: 768px) {
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  section p {
+    font-size: 18px;
+  }
+}
+
+/* 📱 Стили для мобильных устройств */
+@media (max-width: 767px) {
+  header {
+    padding: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  section h2 {
+    font-size: 22px;
+  }
+
+  section p {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 15px;
+  }
+}
